@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="logo.png" alt="" width="150px" class="img">
+    <header>
+        <ul>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                </div>
+            </li>
+            <li class="dropdown"></li><a href="javascript:void(0)" class="dropbtn">Program</a>
+            <div class="dropdown-content">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+            </div>
+            </li>
+            <a href="">Academics</a>
+            <a href="">Admission</a>
+            <a href="">Campus Life</a>
+            <a href="https://www.cuchd.in/placements/placement-tracker.php">Placements</a>
+            <a href="">Contact Us</a>
+            <input type="search" class="search">
+            <button type="search" class="btn">Search</button>
+        </ul>
+    </header>
+    <hr>
+    <marquee behavior="" direction="left" scrollamount="20" style="background-color: black;color: white;">Admission Open
+        for 2023</marquee>
+    <div class="img1" style="max-width:500px">
+        <img class="mySlides" src="chandigarh university.jpg" style="width:1200px" height="500px">
+        <img class="mySlides" src="1.jpg" style="width:1200px" height="500px">
+        <img class="mySlides" src="2.jpg" style="width:1200px" height="500px">
+        <img class="mySlides" src="3.jpeg" style="width:1200px" height="500px">
+        <img class="mySlides" src="4.jpg" style="width:1200px" height="500px">
+        <img class="mySlides" src="5.jpeg" style="width:1200px" height="500px">
+    </div>
+    <hr>
+    <div class="content">
+        <h2>Apply for Admissions at Chandigarh University</h2>
+    </div><br>
+    <div class="para">
+        <p>Chandigarh University, Punjab (CU) provides Admissions for Engineering, MBA, Film Studies, Optometry,
+            Physiotherapy, Architecture & Design, Business Management, Hotel Management & Tourism, Animation &
+            Multimedia, Bio & Pharma Sciences, Computer Applications, Teachers Training and Research, Legal Studies,
+            Journalism & Mass Communication, Agri-Business, Bachelor of Arts (B.A), Yoga studies, Commerce, Interior
+            Design and Specialized programs in association with IBM, TCS, SBI, and many more...</p>
+    </div><br><br>
+    <div class="contentbase">
+    <div class="column1">
+        <ul><h3>contacts</h3><hr><br>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <div class="column2">
+        <ul><h3>contacts</h3>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <div class="column3">
+        <ul><h3>contacts</h3>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <div class="column4">
+        <ul><h3>contacts</h3>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    </div>
+    
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1500); // Change image every 1.5 seconds
+        }
+    </script>
+</body>
+
+</html>
